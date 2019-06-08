@@ -464,8 +464,8 @@ Michael Gruessi</h5>
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
                                         <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Input Data</a></li>
-                                        <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Zeit Angeben</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Time Tracker</li>
+                                        <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Projekt erfassen</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Project Creator</li>
                                     </ol>
                                 </nav>
                             </div>
@@ -667,7 +667,7 @@ Michael Gruessi</h5>
                         <!-- ============================================================== -->
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                             <div class="card">
-                                <h5 class="card-header">Time Tracker</h5>
+                                <h5 class="card-header">Project Creator</h5>
                                 <div class="card-body">
                                     <form id="validationform" data-parsley-validate="" novalidate="">
                                       <!--
@@ -696,18 +696,71 @@ Michael Gruessi</h5>
                                             </div>
                                         </div>
                                       -->
+                                      <div class="form-group row">
+                                          <label class="col-12 col-sm-3 col-form-label text-sm-right">Projekt Name</label>
+                                          <div class="col-12 col-sm-8 col-lg-6">
+                                              <!--<textarea required="" class="form-control"></textarea>-->
+                                              <input type="text" required="" class="form-control">
+                                          </div>
+                                      </div>
+                                      <div class="form-group row">
+                                          <label class="col-12 col-sm-3 col-form-label text-sm-right">Projekt Art</label>
+                                          <div class="col-12 col-sm-8 col-lg-6">
+                                            <!--
+                                              <input type="text" required="" data-parsley-max="6" placeholder="Max value is 6" class="form-control"> -->
+                                              <select class="selectpicker form-control">
+                                                <option>Bitte Projektart wählen</option>
+                                                <option>Projektart A</option>
+                                                <option>Projektart B</option>
+                                                <option>Projektart C</option>
+                                              </select>
+                                          </div>
+                                      </div>
+                                      <div class="form-group row">
+                                          <label class="col-12 col-sm-3 col-form-label text-sm-right">Priorität</label>
+                                          <div class="col-12 col-sm-8 col-lg-6">
+                                            <!--
+                                              <input type="text" required="" data-parsley-max="6" placeholder="Max value is 6" class="form-control"> -->
+                                              <select class="selectpicker form-control">
+                                                <option>Bitte Priorität wählen</option>
+                                                <option>Priorität A</option>
+                                                <option>Priorität B</option>
+                                                <option>Priorität C</option>
+                                              </select>
+                                          </div>
+                                      </div>
                                         <div class="form-group row">
-                                            <label class="col-12 col-sm-3 col-form-label text-sm-right">Aufgewendete Zeit</label>
+                                            <label class="col-12 col-sm-3 col-form-label text-sm-right">Projekt Nummer</label>
                                             <div class="col-12 col-sm-8 col-lg-6">
-                                                <input type="text" required="" data-parsley-min="0.25" placeholder="Mindestzeit 0.25h" class="form-control">
+                                                <input type="text" required="" data-parsley-min="0.25" placeholder="55444A" class="form-control">
                                             </div>
                                         </div>
+                                        <div class="form-group row">
+                                            <label class="col-12 col-sm-3 col-form-label text-sm-right">Beschreibung</label>
+                                            <div class="col-12 col-sm-8 col-lg-6">
+                                                <textarea required="" class="form-control"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <label class="col-12 col-sm-3 col-form-label text-sm-right">Status</label>
+                                            <div class="col-12 col-sm-8 col-lg-6">
+                                              <!--
+                                                <input type="text" required="" data-parsley-max="6" placeholder="Max value is 6" class="form-control"> -->
+                                                <select class="selectpicker form-control">
+                                                  <option>Bitte Status wählen</option>
+                                                  <option>Status A</option>
+                                                  <option>Status B</option>
+                                                  <option>Status C</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <!--
                                         <div class="form-group row">
                                             <label class="col-12 col-sm-3 col-form-label text-sm-right">Tätigkeit</label>
                                             <div class="col-12 col-sm-8 col-lg-6">
                                               <!--
                                                 <input type="text" required="" data-parsley-max="6" placeholder="Max value is 6" class="form-control"> -->
-                                                <select class="selectpicker form-control">
+                                                <!--<select class="selectpicker form-control">
                                                   <option>Tätigkeit wählen</option>
                                                   <option>Tätigkeit A</option>
                                                   <option>Tätigkeit B</option>
@@ -719,6 +772,7 @@ Michael Gruessi</h5>
                                             <div class="col-12 col-sm-8 col-lg-6">
                                               <!--
                                                 <input type="text" required="" data-parsley-max="6" placeholder="Max value is 6" class="form-control"> -->
+<!--
                                                 <select class="selectpicker form-control">
                                                   <option>Projekt wählen</option>
                                                   <option>Projekt A</option>
@@ -750,7 +804,7 @@ Michael Gruessi</h5>
                                         </div>
 
                                         <!-- Verrechnungsart -->
-                                        <div class="form-group row">
+                              <!--          <div class="form-group row">
                                             <label class="col-sm-3 col-form-label text-sm-right">Verrechnungsart</label>
                                             <div class="col-sm-6">
                                                 <div class="custom-controls-stacked">
@@ -817,6 +871,7 @@ Michael Gruessi</h5>
                                             </div>
                                         </div>
                                       -->
+                                      
                                         <div class="form-group row">
                                             <label class="col-12 col-sm-3 col-form-label text-sm-right">Bemerkung</label>
                                             <div class="col-12 col-sm-8 col-lg-6">
@@ -846,7 +901,7 @@ Michael Gruessi</h5>
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                            Modul:Integration - ZHAW 
+                            Modul:Integration - ZHAW
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
                             <div class="text-md-right footer-links d-none d-sm-block">
