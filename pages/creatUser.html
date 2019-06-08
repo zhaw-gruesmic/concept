@@ -190,14 +190,14 @@ Michael Gruessi</h5>
                 <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                         <div class="page-header">
-                            <h2 class="pageheader-title">Time Tracker </h2>
+                            <h2 class="pageheader-title">User Creator </h2>
                             <p class="pageheader-text">Proin placerat ante duiullam scelerisque a velit ac porta, fusce sit amet vestibulum mi. Morbi lobortis pulvinar quam.</p>
                             <div class="page-breadcrumb">
                                 <nav aria-label="breadcrumb">
                                     <ol class="breadcrumb">
                                         <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Input Data</a></li>
-                                        <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Zeit Angeben</a></li>
-                                        <li class="breadcrumb-item active" aria-current="page">Time Tracker</li>
+                                        <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Benutzer erfassen</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">User Creator</li>
                                     </ol>
                                 </nav>
                             </div>
@@ -208,78 +208,72 @@ Michael Gruessi</h5>
                 <!-- end pageheader -->
                 <!-- ============================================================== -->
 
-                  <div class="row">
+                    <div class="row">
                         <!-- ============================================================== -->
                         <!-- validation types -->
                         <!-- ============================================================== -->
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                             <div class="card">
-                                <h5 class="card-header">Time Tracker</h5>
+                                <h5 class="card-header">User Creator</h5>
                                 <div class="card-body">
                                     <form id="validationform" data-parsley-validate="" novalidate="">
                                       <div class="form-group row">
-                                            <label class="col-12 col-sm-3 col-form-label text-sm-right">Aufgewendete Zeit</label>
-                                            <div class="col-12 col-sm-8 col-lg-6">
-                                                <input type="text" required="" data-parsley-min="0.25" placeholder="Mindestzeit 0.25h" class="form-control">
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-12 col-sm-3 col-form-label text-sm-right">Tätigkeit</label>
-                                            <div class="col-12 col-sm-8 col-lg-6">
-                                              <!--
-                                                <input type="text" required="" data-parsley-max="6" placeholder="Max value is 6" class="form-control"> -->
-                                                <select class="selectpicker form-control">
-                                                  <option>Tätigkeit wählen</option>
-                                                  <option>Tätigkeit A</option>
-                                                  <option>Tätigkeit B</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label class="col-12 col-sm-3 col-form-label text-sm-right">Projekt</label>
-                                            <div class="col-12 col-sm-8 col-lg-6">
-                                              <!--
-                                                <input type="text" required="" data-parsley-max="6" placeholder="Max value is 6" class="form-control"> -->
-                                                <select class="selectpicker form-control">
-                                                  <option>Projekt wählen</option>
-                                                  <option>Projekt A</option>
-                                                  <option>Projekt B</option>
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                        <!-- Verrechnungsart -->
-                                        <div class="form-group row">
-                                            <label class="col-sm-3 col-form-label text-sm-right">Verrechnungsart</label>
-                                            <div class="col-sm-6">
-                                                <div class="custom-controls-stacked">
-                                                    <label class="custom-control custom-checkbox">
-                                                        <input id="ck1" name="ck1" type="checkbox" data-parsley-multiple="groups" value="bar" data-parsley-mincheck="1" data-parsley-errors-container="#error-container1" class="custom-control-input"><span class="custom-control-label">Intern</span>
-                                                    </label>
-                                                    <label class="custom-control custom-checkbox">
-                                                        <input id="ck2" name="ck2" type="checkbox" data-parsley-multiple="groups" value="bar2" data-parsley-mincheck="1" data-parsley-errors-container="#error-container1" class="custom-control-input"><span class="custom-control-label">Extern</span>
-                                                    </label>
-                                                    <label class="custom-control custom-checkbox">
-                                                        <input id="ck3" name="ck3" type="checkbox" data-parsley-multiple="groups" value="bar3" data-parsley-mincheck="1" required="" data-parsley-errors-container="#error-container1" class="custom-control-input"><span class="custom-control-label">Spezial</span>
-                                                    </label>
-                                                    <div id="error-container1"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                       <!-- Ende Verrechnungsart -->
-                                       
-                                        <div class="form-group row">
-                                            <label class="col-12 col-sm-3 col-form-label text-sm-right">Bemerkung</label>
-                                            <div class="col-12 col-sm-8 col-lg-6">
-                                                <textarea required="" class="form-control"></textarea>
-                                            </div>
-                                        </div>
-                                        <div class="form-group row text-right">
+                                          <label class="col-12 col-sm-3 col-form-label text-sm-right">Vorname</label>
+                                          <div class="col-12 col-sm-8 col-lg-6">
+                                              <!--<textarea required="" class="form-control"></textarea>-->
+                                              <input type="text" required="" class="form-control">
+                                          </div>
+                                      </div>
+                                      <div class="form-group row">
+                                          <label class="col-12 col-sm-3 col-form-label text-sm-right">Nachname</label>
+                                          <div class="col-12 col-sm-8 col-lg-6">
+                                              <!--<textarea required="" class="form-control"></textarea>-->
+                                              <input type="text" required="" class="form-control">
+                                          </div>
+                                      </div>
+                                      <div class="form-group row">
+                                              <label class="col-12 col-sm-3 col-form-label text-sm-right">Geburtsdatum</label>
+                                              <div class="col-12 col-sm-8 col-lg-6">
+                                              <input type="text" class="form-control date-inputmask" id="date-mask" placeholder=dd/mm/yyyy>
+                                          </div>
+                                      </div>
+                                      <div class="form-group row">
+                                          <label class="col-12 col-sm-3 col-form-label text-sm-right">Mitarbeiter Nummer</label>
+                                          <div class="col-12 col-sm-8 col-lg-6">
+                                              <input type="text" required="" placeholder="0007589" class="form-control">
+                                          </div>
+                                      </div>
+                                      <div class="form-group row">
+                                          <label class="col-12 col-sm-3 col-form-label text-sm-right">Wochen Arbeitszeit</label>
+                                          <div class="col-12 col-sm-8 col-lg-6">
+                                              <input type="text" required="" data-parsley-min="4" placeholder="42" class="form-control">
+                                          </div>
+                                      </div>
+                                      <div class="form-group row">
+                                          <label class="col-12 col-sm-3 col-form-label text-sm-right">Rolle</label>
+                                          <div class="col-12 col-sm-8 col-lg-6">
+                                            <!--
+                                              <input type="text" required="" data-parsley-max="6" placeholder="Max value is 6" class="form-control"> -->
+                                              <select class="selectpicker form-control">
+                                                <option>Bitte Rolle wählen</option>
+                                                <option>Rolle A</option>
+                                                <option>Rolle B</option>
+                                                <option>Rolle C</option>
+                                              </select>
+                                          </div>
+                                      </div>
+                                      <div class="form-group row">
+                                          <label class="col-12 col-sm-3 col-form-label text-sm-right">Passwort</label>
+                                          <div class="col-12 col-sm-8 col-lg-6">
+                                              <input class="form-control" type="password" id="password_field" name="password" />
+                                          </div>
+                                      </div>
+                                      <div class="form-group row text-right">
                                             <div class="col col-sm-10 col-lg-9 offset-sm-1 offset-lg-0">
                                                 <button type="submit" class="btn btn-space btn-primary">Submit</button>
                                                 <button class="btn btn-space btn-secondary">Cancel</button>
                                             </div>
-                                        </div>
+                                      </div>
                                     </form>
                                 </div>
                             </div>
