@@ -203,12 +203,12 @@
         element: 'morris_totalrevenue',
         behaveLikeLine: true,
         data: [
-            { x: 'April', y: 400, },
-            { x: 'Mai', y: 1400, },
-            { x: 'Juni', y: 2500, },
-            { x: 'Juli', y: 3000, },
-            { x: 'August', y: 5000, },
-            { x: 'September', y: 7000, }
+            { x: 'April', y: 100, },
+            { x: 'Mai', y: 200, },
+            { x: 'Juni', y: 300, },
+            { x: 'Juli', y: 400, },
+            { x: 'August', y: 500, },
+            { x: 'September', y: 600, }
         ],
         xkey: 'x',
         ykeys: ['y'],
